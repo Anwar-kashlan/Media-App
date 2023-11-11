@@ -20,7 +20,7 @@ const AdvertisementWidget = () => {
         alt="ad"
         width="100%"
         height="auto"
-        src={"http://localhost:3001/assets/info4.jpeg"}
+        src={"https://media-app-back-end-njig.onrender.com/assets/info4.jpeg"}
         style={{
           borderRadius: "0.75rem",
           margin: "0.75rem 0",

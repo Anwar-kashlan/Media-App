@@ -20,10 +20,13 @@ const UserWidget = ({ userId, picturePath }) => {
   const [user, setUser] = useState(null);
   const token = useSelector((state) => state.token);
   const getUser = async () => {
-    const res = await fetch(`http://localhost:3001/users/${userId}`, {
-      method: "GET",
-      headers: { Authorization: `Bearer ${token}` },
-    });
+    const res = await fetch(
+      `https://media-app-back-end-njig.onrender.com/users/${userId}`,
+      {
+        method: "GET",
+        headers: { Authorization: `Bearer ${token}` },
+      }
+    );
     const data = await res.json();
     setUser(data);
   };

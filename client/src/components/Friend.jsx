@@ -23,7 +23,7 @@ const Friend = ({ friendId, name, subtitle, userPicturePath, isProfile }) => {
 
   const patchFriend = async () => {
     const response = await fetch(
-      `http://localhost:3001/users/${_id}/${friendId}`,
+      `https://media-app-back-end-njig.onrender.com/users/${_id}/${friendId}`,
       {
         method: "PATCH",
         headers: {
