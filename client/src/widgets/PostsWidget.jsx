@@ -10,7 +10,7 @@ const PostsWidget = ({ userId, isProfile = false }) => {
 
   const getPosts = async () => {
     const response = await fetch(
-      "https://media-app-back-end-njig.onrender.com/posts",
+      `https://media-app-back-end-y90k.onrender.com/posts`,
       {
         method: "GET",
         headers: { Authorization: `Bearer ${token}` },
@@ -22,7 +22,7 @@ const PostsWidget = ({ userId, isProfile = false }) => {
 
   const getUserPosts = async () => {
     const response = await fetch(
-      `https://media-app-back-end-njig.onrender.com/posts/${userId}/posts`,
+      `https://media-app-back-end-y90k.onrender.com/posts/${userId}/posts`,
       {
         method: "GET",
         headers: { Authorization: `Bearer ${token}` },

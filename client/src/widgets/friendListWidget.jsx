@@ -14,7 +14,7 @@ const FriendListWidget = ({ userId }) => {
 
   const getFriends = async () => {
     const response = await fetch(
-      `https://media-app-back-end-njig.onrender.com/users/${userId}/friends`,
+      `https://media-app-back-end-y90k.onrender.com/users/${userId}/friends`,
       {
         method: "GET",
         headers: { Authorization: `Bearer ${token}` },

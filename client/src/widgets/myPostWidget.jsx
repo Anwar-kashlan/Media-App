@@ -48,7 +48,7 @@ const MyPostWidget = ({ picturePath }) => {
     }
 
     const response = await fetch(
-      `https://media-app-back-end-njig.onrender.com/posts`,
+      `https://media-app-back-end-y90k.onrender.com/posts`,
       {
         method: "POST",
         headers: { Authorization: `Bearer ${token}` },

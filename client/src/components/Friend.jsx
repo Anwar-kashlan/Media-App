@@ -6,7 +6,7 @@ import { setFriends } from "state";
 import FlexBetween from "./FlexBetween";
 import ImagesWrapper from "./ImagesWrapper";
 
-const Friend = ({ friendId, name, subtitle, userPicturePath, isProfile }) => {
+const Friend = ({ friendId, name, subtitle, userPicturePath }) => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
   const { _id } = useSelector((state) => state.user);
@@ -23,7 +23,7 @@ const Friend = ({ friendId, name, subtitle, userPicturePath, isProfile }) => {
 
   const patchFriend = async () => {
     const response = await fetch(
-      `https://media-app-back-end-njig.onrender.com/users/${_id}/${friendId}`,
+      `https://media-app-back-end-y90k.onrender.com/users/${_id}/${friendId}`,
       {
         method: "PATCH",
         headers: {

@@ -20,7 +20,7 @@ const AdvertisementWidget = () => {
         alt="ad"
         width="100%"
         height="auto"
-        src={"https://media-app-back-end-njig.onrender.com/assets/info4.jpeg"}
+        src={`https://media-app-back-end-y90k.onrender.com/assets/info4.jpeg`}
         style={{
           borderRadius: "0.75rem",
           margin: "0.75rem 0",
@@ -32,7 +32,7 @@ const AdvertisementWidget = () => {
       </FlexBetween>
       <Typography color={medium} m="0.5rem 0">
         Your pathway to stunning and immaculate beauty and made sure your skin
-        is exfoliating skin and shining like super light.
+        is exfoliating skin and shining like light.
       </Typography>
     </WidgetsWrapper>
   );

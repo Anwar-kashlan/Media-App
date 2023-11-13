@@ -4,7 +4,7 @@ const ImagesWrapper = ({ size = "60px", image }) => {
   return (
     <Box width={size} height={size}>
       <img
-        src={`https://media-app-back-end-njig.onrender.com/assets/${image}`}
+        src={`https://media-app-back-end-y90k.onrender.com/assets/${image}`}
         alt="user"
         width={size}
         height={size}
