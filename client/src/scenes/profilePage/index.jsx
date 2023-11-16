@@ -5,7 +5,6 @@ import { useParams } from "react-router-dom";
 import Navbar from "scenes/navbar";
 import PostsWidget from "widgets/PostsWidget";
 import FriendListWidget from "widgets/friendListWidget";
-import MyPostWidget from "widgets/myPostWidget";
 import UserWidget from "widgets/userWidget";
 
 const ProfilePage = () => {
@@ -51,8 +50,6 @@ const ProfilePage = () => {
           flexBasis={isNonMobileScreens ? "42%" : undefined}
           mt={isNonMobileScreens ? undefined : "2rem"}
         >
-          <MyPostWidget picturePath={user.picturePath} />
-          <Box m="2rem 0" />
           <PostsWidget userId={userId} isProfile />
         </Box>
       </Box>

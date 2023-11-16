@@ -6,7 +6,13 @@ import { setFriends } from "state";
 import FlexBetween from "./FlexBetween";
 import ImagesWrapper from "./ImagesWrapper";
 
-const Friend = ({ friendId, name, subtitle, userPicturePath }) => {
+const Friend = ({
+  friendId,
+  name,
+  subtitle,
+  userPicturePath,
+  profileFriend,
+}) => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
   const { _id } = useSelector((state) => state.user);
@@ -65,7 +71,7 @@ const Friend = ({ friendId, name, subtitle, userPicturePath }) => {
         </Box>
       </FlexBetween>
 
-      {_id !== friendId && (
+      {_id !== friendId && !profileFriend && (
         <IconButton
           onClick={() => patchFriend()}
           sx={{ backgroundColor: primaryLight, p: "0.6rem" }}
